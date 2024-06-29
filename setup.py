@@ -5,12 +5,12 @@ with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
 setup(
-    name="wazing_net",
-    version="1.0.8",
-    description="Wazing_net - Fast and easy access to request methods just like requests",
+    name="OpenSpotify",
+    version="1.0.1",
+    description="OpenSpotify is a fast and efficient reverse-engineered Spotify API, allowing unlimited access to Spotify's private API without the need for API keys. It provides access to all Spotify API routes, including private routes and data.",
     author="Anonyxbiz",
     author_email="biz@anonyxis.life",
-    url="https://github.com/anonyxbiz/wazing_net",
+    url="https://github.com/anonyxbiz/OpenSpotify",
     packages=find_packages(),
     include_package_data=True,
     install_requires=requirements,
@@ -19,6 +19,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    py_modules=['wazing_net'],
+    py_modules=['Openspotify'],
     python_requires='>=3.6',
 )

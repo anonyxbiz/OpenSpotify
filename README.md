@@ -4,16 +4,16 @@ OpenSpotify is a fast and efficient reverse-engineered Spotify API, allowing unl
 
 ## Features
 
-- Access Spotify API routes without API keys.
+- Access Private and Commercial Spotify API routes without API keys.
 - Retrieve private Spotify data.
 - Encrypted data handling for security.
 
 ## Installation
 
-To install the required dependencies, use the following command:
+To install OpenSpotify, use the following command:
 
 ```bash
-pip install -r requirements.txt
+pip install git+https://github.com/anonyxbiz/OpenSpotify
 ```
 
 ## Environment Variables
@@ -34,6 +34,7 @@ To initialize and use the `OpenSpotify` API, create an instance of the `Spotify`
 from openspotify import Spotify
 
 spotify = Spotify()
+
 ```
 
 ### Retrieve Album Data
@@ -41,7 +42,7 @@ spotify = Spotify()
 You can retrieve album data using the `get_album_data` method:
 
 ```python
-album_data = await spotify.get_album_data('spotify:album:album_uri')
+album_data = await spotify.get_album_data('spotify_album_uri')
 print(album_data)
 ```
 
