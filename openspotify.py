@@ -224,6 +224,13 @@ class Spotify:
 
         return 'ok'
 
+    async def get_albget_authorized_headers(app):
+        if not await app.set_app():
+            await logger.log_data("Something went wrong")
+            return False
+        else:
+            return app.headers
+        
     async def get_album_data(app, album_uri):
         app.album_info = None
         while True:
